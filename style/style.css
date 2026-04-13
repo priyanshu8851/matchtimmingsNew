@@ -1628,12 +1628,19 @@ main .ghost-btn {
   margin-top: 20px;
 }
 
+.news-btn-wrap2 a:hover{
+  background-color:var(--accent);
+  color:#fff;
+
+}
+
 .news-btn-wrap2 a {
   padding: 8px 20px;
   border-radius: 20px;
   border: 1px solid var(--themeprimarycolor);
   color: var(--themeprimarycolor);
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 /* .swiper-slide {
   max-width: 240px;
