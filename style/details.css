@@ -11,7 +11,15 @@
     color: #fff;
     overflow: hidden;
 }
-
+.team-box2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+}
+.team-box2 .team-copy{
+    padding-right: 10px;
+}
 .breadcrumb-overlay {
     position: absolute;
     inset: 0;
@@ -163,7 +171,7 @@
 
 .showcase-head {
     padding: 15px 20px;
-    border-bottom: 4px solid #ffdd00; /* The yellow accent line */
+    border-bottom: 1px solid #ffdd00; /* The yellow accent line */
     background-color: #fff;
 }
 
@@ -173,35 +181,172 @@
     font-weight: 700;
     color: #000;
 }
-
-.series-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Wrapper */
+.series-slider-wrap {
+    background: #f8f9fb;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.series-list li {
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.2s ease;
+/* Swiper fix */
+.series-slider {
+    padding: 0 10px;
 }
 
-.series-list li:last-child {
-    border-bottom: none;
+/* Slides auto width */
+.series-slider .swiper-slide {
+    width: auto;
 }
 
-.series-list li a {
-    display: block;
-    padding: 10px 10px;
+/* Pill buttons */
+.series-slider a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #333;
     text-decoration: none;
-    color: #444;
-    font-size: 0.95rem;
-    font-weight: 400;
+    white-space: nowrap;
+    transition: all 0.25s ease;
 }
 
-.series-list li:hover {
-    background-color: #f9f9f9;
-}
-
-.series-list li a:hover {
+/* Hover */
+.series-slider a:hover {
+    background: #FFCC3D;
+    border-color: #FFCC3D;
     color: #000;
 }
+
+/* Active style (optional) */
+.series-slider a.active {
+    background: #FFCC3D;
+    border-color: #FFCC3D;
+    color: #000;
+    font-weight: 500;
+}
+/* Swiper fix */
+.mw-cards {
+    padding: 10px 0;
+}
+
+.mw-card {
+    width: 260px;
+}
+
+/* Nav buttons */
+
+
+
+/* Tabs */
+.mw-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.mw-tab {
+    padding: 6px 14px;
+    border: none;
+    background: #eee;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mw-tab.active {
+    background: #FFCC3D;
+    color: #000;
+}
+
+/* Hide inactive tab */
+.mw-content {
+    display: none;
+}
+
+.mw-content.active {
+    display: block;
+}
+/* Season Box */
+.season-box {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* Header */
+.season-header {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFCC3D;
+    padding-bottom: 6px;
+}
+
+.season-header h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Season Cards */
+.season-card {
+    display: block;
+    background: #1e293b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Text */
+.season-card span {
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+/* Hover effect */
+.season-card:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, #FFCC3D, #ffdc11);
+    color: #000;
+}
+
+/* Content Section */
+.season-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* Image */
+.season-image img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.content-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.season-content p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.7;
+}
+
+
