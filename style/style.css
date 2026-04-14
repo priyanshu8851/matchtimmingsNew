@@ -1371,6 +1371,27 @@ main .ghost-btn {
   width:100%;
 }
 }
+.match-widget-2 {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(16, 19, 26, 0.08);
+
+      background: #fff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(58 59 69 / 20%) !important;
+}
+.match-widget {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(16, 19, 26, 0.08);
+
+      background: #fff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(58 59 69 / 20%) !important;
+}
+@media screen and (max-width:1120px) {
+  .match-widget{
+    margin-top: 30px;
+  }
+}
 .match-widget {
   padding: 10px 20px;
   border-radius: 8px;
@@ -1386,6 +1407,13 @@ main .ghost-btn {
 }
 
 /* Tabs */
+.mw2-tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e9e9e9;
+}
 .mw-tabs {
   display: flex;
   gap: 20px;
