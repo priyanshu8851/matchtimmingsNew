@@ -715,7 +715,47 @@
                         </div>
                     </div>
                 </div>
-            </section>
+                </section>
+                <section class="team-fixtures py-4">
+                    <div class="container position-relative">
+                        <h3 class="mb-3">Team Fixtures</h3>
+                        <div class="swiper teamSwiper py-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide team-card"><img src="./assets/lsg.jpg">
+                                    <p>LSG</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/rr.jpg">
+                                    <p>RR</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="images/pz.png">
+                                    <p>PZ</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="images/rcb.png">
+                                    <p>RCB</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/csk.jpg">
+                                    <p>CSK</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/ms.png">
+                                    <p>MS</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="images/mi.png">
+                                    <p>MI</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="images/ind.png">
+                                    <p>IND</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/kkr.jpg">
+                                    <p>KKR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arrows -->
+                        <div class="swiper-button-prev custom-prev"></div>
+                        <div class="swiper-button-next custom-next"></div>
+
+</div>
+</section>
             <section class="matches-showcase">
                 <div class="container">
                     <div class="row">
@@ -1220,9 +1260,109 @@
 
         </main>
     </div>
+    <footer class="espn-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Key Series -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="footer-title">Key Series</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Men's T20 World Cup</a></li>
+                        <li><a href="#">WPL 2026</a></li>
+                        <li><a href="#">IPL 2026</a></li>
+                        <li><a href="#">Ranji Trophy 2025/26</a></li>
+                        <li><a href="#">Sheffield Shield</a></li>
+                    </ul>
+                </div>
+    
+                <!-- More Series -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h6 class="footer-title">&nbsp;</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Cricket World Cup League 2</a></li>
+                        <li><a href="#">Women's Championship</a></li>
+                        <li><a href="#">ICC World Test Championship</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="footer-title">Our Sports</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Cricket</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Hockey</a></li>
+                        <li><a href="#">Vollyball</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="footer-title">Social Connect</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Apps -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h6 class="footer-title">Apps</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Android App</a></li>
+                        <li><a href="#">iOS App</a></li>
+                    </ul>
+    
+                    <h6 class="footer-title mt-3">Sites</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Matchtimings</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <div class="footer-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Ads</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <p class="mt-3 mt-md-0 mb-0">© 2026 MatchTimings. All Rights Reserved Designed & Developed By <a
+                        href="https://progmattic.com" target="_blank">Progmattic AI</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".teamSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: false,
+
+        navigation: {
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+        },
+
+        breakpoints: {
+            576: { slidesPerView: 4 },
+            768: { slidesPerView: 6 },
+            1024: { slidesPerView: 8 }
+        }
+    });
+</script>
 </body>
 
 </html>

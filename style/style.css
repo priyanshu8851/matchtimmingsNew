@@ -1612,10 +1612,9 @@ cursor: pointer;
   background: #fff;
   padding: 25px;
   border-radius: 18px;
-   border: 1px solid rgba(16, 19, 26, 0.08);
- 
-      background: #fff;
-    box-shadow: 0 0.125rem 0.25rem 0 rgb(58 59 69 / 20%) !important;
+  border: 1px solid rgba(16, 19, 26, 0.08);
+  background: #fff;
+  /* box-shadow: 0 0.125rem 0.25rem 0 rgb(58 59 69 / 20%) !important; */
 }
 
 /* Header */
@@ -1761,3 +1760,136 @@ cursor: pointer;
 .swiper-wrapper {
   gap:10px;
 } */
+.espn-footer {
+  background: #1f1f1f;
+  color: #ccc;
+  padding: 50px 0 0;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  color: #9aa0a6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  background: #0f172a;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.footer-bottom .footer-links a {
+  color: #8b949e;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-bottom .footer-links a:hover {
+  color: #fff;
+}
+
+.team-fixtures {
+  background: transparent;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.team-card img {
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid #0000000f;
+}
+
+.team-card img {
+  height: 50px;
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 100vmax;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+
+/* Arrow styling */
+.custom-prev,
+.custom-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  top: 60%;
+}
+
+.custom-prev::after,
+.custom-next::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Position arrows */
+.custom-prev {
+  left: 0px;
+}
+
+.custom-next {
+  right: 0px;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 767px) {
+
+  .custom-prev,
+  .custom-next {
+    display: none;
+  }
+}
