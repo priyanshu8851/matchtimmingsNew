@@ -36,7 +36,7 @@
                 </nav>
 
                 <div class="nav-actions">
-                    <button class="login-link">Login</button>
+                    <button class="login-link">LOG IN</button>
                 </div>
             </div>
 
@@ -51,10 +51,10 @@
                 <img src="./assets/add-fullscreen.png" alt="Advertisement banner" class="ad-image">
             </aside>
 
-            <section class="matches-tab  mb-5">
+            <section class="matches-tab mt-5 mt-lg-0 mb-5">
                 <div class="container">
-                    <div class="match-widget">
-                        <div class="showcase-head ">
+                    <div class="match-widget position-relative">
+                        <div class="showcase-head d-none">
                             <h3>Featured Matches</h3>
                         </div>
 
@@ -456,46 +456,18 @@
                     </div>
                 </div>
             </section>
-            <section class="heromain">
+            <section class="heromain mb-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 hero">
-
-                            <div class="article-grid">
-
-                                <div class="article-card small">
-                                    <img src="./assets/banner6.jpeg" alt="">
-                                    <div class="article-content">
-                                        <h4>Chelsea boss responds after Enzo ban controversy</h4>
-                                        <span>Football • 9 hr</span>
-                                    </div>
-                                </div>
-
-                                <div class="article-card small">
-                                    <img src="./assets/banner2.avif" alt="">
-                                    <div class="article-content">
-                                        <h4>Young star shines in intense derby match</h4>
-                                        <span>Football • 6 hr</span>
-                                    </div>
-                                </div>
-
-                                <div class="article-card small">
-                                    <img src="./assets/banner3.png" alt="">
-                                    <div class="article-content">
-                                        <h4>Piers Morgan reacts to shocking defeat</h4>
-                                        <span>Sports • 3 hr</span>
-                                    </div>
-                                </div>
-
-                                <div class="article-card small">
-                                    <img src="./assets/banner1.png" alt="">
-                                    <div class="article-content">
-                                        <h4>New indoor arena becomes top attraction</h4>
-                                        <span>News • 1 hr</span>
-                                    </div>
-                                </div>
-
+                        <div class="col-md-3">
+                            <div class="live-score">
+                                <!--frameborder="0;" scrolling="yes" in the iframe-->
+                                <iframe
+                                    src="https://cwidget.crictimes.org/?v=1.1&a=ffffff&c=&bo=155bd5&b=155bd5&sb=ffffff&lb=155bd5&lc=ffffff&db=000000&tc=ffffff&ti=000000"
+                                    style="width:100%;min-height: 460px;"></iframe>
                             </div>
+                        </div>
+                        <div class="col-md-9">
                             <div class="hero-slider" id="heroSlider">
                                 <div class="slider-track" id="sliderTrack">
                                     <article class="slide active">
@@ -522,22 +494,94 @@
                                     </article>
                                 </div>
 
-                                <div class="slider-controls">
-                                    <button class="slider-btn" id="prevSlide"
-                                        aria-label="Previous slide">&#8249;</button>
-                                    <div class="slider-dots" id="sliderDots">
-                                        <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
-                                        <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
-                                        <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                                    <div class="slider-controls">
+                                        <button class="slider-btn" id="prevSlide" aria-label="Previous slide">&#8249;</button>
+                                        <div class="slider-dots" id="sliderDots">
+                                            <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                                            <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+                                            <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                                        </div>
+                                        <button class="slider-btn" id="nextSlide" aria-label="Next slide">&#8250;</button>
+                                        </div>
+                                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        <section class="heromain">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <article class="showcase-card ad-showcase-card h-100">
+                                            <div class="showcase-head">
+                                                <h3>Advertisement Corner</h3>
+                                            </div>
+                                            <aside class="ad-panel ad-panel-card">
+                                                <img src="./assets/add-card.png" alt="Advertisement example right" class="ad-image">
+                                            </aside>
+                                        </article>
                                     </div>
-                                    <button class="slider-btn" id="nextSlide" aria-label="Next slide">&#8250;</button>
+                                    <div class="col-md-9">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner6.jpeg" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Chelsea boss responds after Enzo ban controversy</h4>
+                                                        <span>Football • 9 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner2.avif" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Young star shines in intense derby match</h4>
+                                                        <span>Football • 6 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner3.png" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Piers Morgan reacts to shocking defeat</h4>
+                                                        <span>Sports • 3 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner6.jpeg" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Chelsea boss responds after Enzo ban controversy</h4>
+                                                        <span>Football • 9 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner2.avif" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Young star shines in intense derby match</h4>
+                                                        <span>Football • 6 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="article-card small">
+                                                    <img src="./assets/banner3.png" alt="">
+                                                    <div class="article-content">
+                                                        <h4>Piers Morgan reacts to shocking defeat</h4>
+                                                        <span>Sports • 3 hr</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+                        </section>
             <section class="matches-showcase">
                 <div class="container">
                     <div class="row">
