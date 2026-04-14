@@ -15,7 +15,7 @@
 <body>
     <header class="site-header">
         <div class="nav-wrap">
-            <a href="#" class="brand" aria-label="Match Timings home">
+            <a href="./index.html" class="brand" aria-label="Match Timings home">
                 <img src="./assets/mt_logo.png" alt="Match Timings logo" class="brand-logo">
             </a>
 
@@ -36,7 +36,12 @@
             </nav>
 
             <div class="nav-actions">
-                <button class="login-link">Login</button>
+
+                <a href="login.html">
+                    <button class="login-link">
+                        Login
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -1055,25 +1060,26 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
     <script>
         var swiper = new Swiper(".series-slider", {
-    slidesPerView: "auto",
-    spaceBetween: 15,
-    loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 15,
+            loop: true,
 
-    speed: 12000, // ⬅️ increase for slower & smoother flow
+            speed: 12000, // ⬅️ increase for slower & smoother flow
 
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true, // optional (better UX)
-    },
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, // optional (better UX)
+            },
 
-    freeMode: true,
-    freeModeMomentum: false,
+            freeMode: true,
+            freeModeMomentum: false,
 
-    allowTouchMove: false, // ⬅️ prevents jerky drag interruptions
-});
+            allowTouchMove: false, // ⬅️ prevents jerky drag interruptions
+        });
         /* Tabs */
         document.querySelectorAll(".mw-tab").forEach(btn => {
             btn.addEventListener("click", () => {
