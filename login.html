@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Timings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/details.css">
+    <style>
+        /* Card */
+        .login-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 25px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #e53935;
+            margin-bottom: 10px;
+            display: grid;
+            justify-content: center;
+        }
+
+        /* Title */
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Input */
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+        }
+
+        /* Button */
+        .login-btn {
+            width: 100%;
+            background: #ffcc3d;
+            color: white;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #ffcc3d;
+        }
+
+        /* OR Divider */
+        .divider {
+            margin: 20px 0;
+            position: relative;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            background: #ddd;
+            top: 50%;
+        }
+
+        .divider::before {
+            left: 0;
+        }
+
+        .divider::after {
+            right: 0;
+        }
+
+        /* Social Buttons */
+        .social-btn {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Footer text */
+        .footer-text {
+            font-size: 11px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .password-wrapper input {
+            padding-right: 40px;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 40%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .terms-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 12px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .terms-wrapper input {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            margin-top: 2px;
+        }
+
+        .terms-wrapper label {
+            line-height: 1.4;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .terms-wrapper a {
+            color: #ffcc3d;
+            text-decoration: underline;
+        }
+
+        .terms-wrapper a:hover {
+            color: #ffcc3d;
+        }
+
+        /* Responsive */
+        @media(max-width: 400px) {
+            .login-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="#" class="brand" aria-label="Match Timings home">
+                <img src="./assets/mt_logo.png" alt="Match Timings logo" class="brand-logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Primary navigation">
+                <div class="nav-shell">
+                    <ul class="nav-links" id="navLinks">
+                        <li><button class="nav-item" data-menu="">Home</button></li>
+                        <li><button class="nav-item active-default" data-menu="cricket">Cricket</button></li>
+                        <li><button class="nav-item" data-menu="tennis">Tennis</button></li>
+                        <li><button class="nav-item" data-menu="football">Football</button></li>
+                        <li><button class="nav-item" data-menu="basketball">Basketball</button></li>
+                        <li><button class="nav-item" data-menu="hockey">Hockey</button></li>
+                        <li><button class="nav-item" data-menu="volleyball">Volleyball</button></li>
+                        <li><button class="nav-item" data-menu="more">More</button></li>
+                    </ul>
+                    <span class="nav-highlight" id="navHighlight" aria-hidden="true"></span>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="login-link">LOG IN</button>
+            </div>
+        </div>
+
+        <div class="mega-menu" id="megaMenu" aria-hidden="true">
+            <div class="mega-menu-inner" id="megaContent"></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+                <div class="login-card mt-5">
+                    <div class="logo"><img src="./assets/mt_logo.png" alt="Match Timings logo" class="brand-logo"></div>
+                    <div class="title">Login into Matchtimings</div>
+                    <div class="login-on" id="loginBox">
+                        <form>
+                            <input type="email" placeholder="Email" class="input-box">
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Password" class="input-box">
+                                <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                            </div>
+                            <button class="login-btn">Login</button>
+
+                            <div class="links">
+                                <span>New user? <a href="#" id="showSignup">Sign Up</a></span>
+                                <a href="#" id="showForgot">Forgot password?</a>
+                            </div>
+                            <div class="footer-text">
+                                By signing in, you agree to Terms & Privacy policies.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="forgot-on" id="forgotBox" style="display:none;">
+                        <form>
+                            <input type="email" placeholder="Email" class="input-box">
+                            <button class="login-btn" id="showReset">Send</button>
+
+                            <div class="links">
+                                <span>Have an account? <a href="#" id="showLogin">Login</a></span>
+                            </div>
+                            <div class="footer-text">
+                                By signing in, you agree to Terms & Privacy policies.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="reset-on" id="resetBox" style="display:none;">
+                        <form>
+                            <input type="name" placeholder="OTP" class="input-box">
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Password" class="input-box">
+                                <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                            </div>
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Confirm Password" class="input-box">
+                                <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                            </div>
+                            <button class="login-btn">Reset Password</button>
+
+                            <div class="links">
+                                <span>Have an account? <a href="#" id="showLogin">Login</a></span>
+                            </div>
+                            <div class="footer-text">
+                                By signing in, you agree to Terms & Privacy policies.
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-on" id="signupBox" style="display:none;">
+                        <form>
+                            <input type="name" placeholder="Name" class="input-box">
+                            <input type="email" placeholder="Email" class="input-box">
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Password" class="input-box">
+                                <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                            </div>
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Confirm Password" class="input-box">
+                                <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                            </div>
+                            <div class="terms-wrapper">
+                                <input type="checkbox" id="agree">
+                                <label for="agree">
+                                    I agree to Sportskeeda's
+                                    <a href="#">Terms</a> and
+                                    <a href="#">Privacy policies.</a>
+                                </label>
+                            </div>
+                            <button class="login-btn">Sign Up</button>
+
+                            <div class="links">
+                                <span>Have an account? <a href="#" id="showLogin">Login</a></span>
+                            </div>
+                            <div class="footer-text">
+                                By signing in, you agree to Terms & Privacy policies.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const togglePassword = document.getElementById("togglePassword");
+        const password = document.getElementById("password");
+
+        togglePassword.addEventListener("click", function () {
+            const type = password.type === "password" ? "text" : "password";
+            password.type = type;
+
+            this.classList.toggle("fa-eye");
+            this.classList.toggle("fa-eye-slash");
+        });
+    </script>
+    <script>
+        const agree = document.getElementById("agree");
+        const loginBtn = document.getElementById("loginBtn");
+
+        agree.addEventListener("change", () => {
+            loginBtn.disabled = !agree.checked;
+        });
+    </script>
+    <script>
+        const loginBox = document.getElementById("loginBox");
+        const signupBox = document.getElementById("signupBox");
+        const forgotBox = document.getElementById("forgotBox");
+        const resetBox = document.getElementById("resetBox");
+
+        function hideAll() {
+            loginBox.style.display = "none";
+            signupBox.style.display = "none";
+            forgotBox.style.display = "none";
+            resetBox.style.display = "none";
+        }
+
+        // Signup
+        document.getElementById("showSignup").onclick = (e) => {
+            e.preventDefault();
+            hideAll();
+            signupBox.style.display = "block";
+        };
+
+        // Login
+        document.querySelectorAll("#showLogin, .backLogin").forEach(btn => {
+            btn.onclick = (e) => {
+                e.preventDefault();
+                hideAll();
+                loginBox.style.display = "block";
+            };
+        });
+
+        // Forgot
+        document.getElementById("showForgot").onclick = (e) => {
+            e.preventDefault();
+            hideAll();
+            forgotBox.style.display = "block";
+        };
+
+        // ✅ Forgot → Reset (FORM SUBMIT)
+        const forgotForm = document.getElementById("forgotForm");
+        if (forgotForm) {
+            forgotForm.onsubmit = (e) => {
+                e.preventDefault();
+                hideAll();
+                resetBox.style.display = "block";
+            };
+        }
+
+        // ✅ NEW: Button click se bhi reset open
+        const showResetBtn = document.getElementById("showReset");
+        if (showResetBtn) {
+            showResetBtn.onclick = (e) => {
+                e.preventDefault();
+                hideAll();
+                resetBox.style.display = "block";
+            };
+        }
+
+        // Password toggle (ALL fields)
+        document.querySelectorAll(".password-wrapper").forEach(wrapper => {
+            const input = wrapper.querySelector("input");
+            const icon = wrapper.querySelector("i");
+
+            icon.onclick = () => {
+                input.type = input.type === "password" ? "text" : "password";
+                icon.classList.toggle("fa-eye");
+                icon.classList.toggle("fa-eye-slash");
+            };
+        });
+    </script>
+</body>
+
+</html>
