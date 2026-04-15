@@ -7,6 +7,7 @@
     <title>Match Timings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/details.css">
 </head>
@@ -23,7 +24,7 @@
                 <nav class="main-nav" aria-label="Primary navigation">
                     <div class="nav-shell">
                         <ul class="nav-links" id="navLinks">
-                        <li><button class="nav-item" data-menu="">Home</button></li>
+                            <li><button class="nav-item" data-menu="">Home</button></li>
 
                             <li><button class="nav-item active-default" data-menu="cricket">Cricket</button></li>
                             <li><button class="nav-item" data-menu="tennis">Tennis</button></li>
@@ -39,10 +40,10 @@
 
                 <div class="nav-actions">
                     <a href="login.html">
-                    <button class="login-link">
-                        Login
-                    </button>
-                </a>
+                        <button class="login-link">
+                            Login
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -52,10 +53,7 @@
         </header>
 
         <main>
-            <aside class="ad-panel ad-panel-wide mb-5 d-none">
-                <span class="ad-tag">Sponsored</span>
-                <img src="./assets/add-fullscreen.png" alt="Advertisement banner" class="ad-image">
-            </aside>
+
 
             <section class="matches-tab mt-5 mt-lg-0 mb-5">
                 <div class="container">
@@ -759,163 +757,484 @@
             </section>
             <section class="team-fixtures py-4">
                 <div class="container position-relative">
-                    <h3 class="mb-3">Team Fixtures</h3>
-                    <div class="swiper teamSwiper py-3">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide team-card"><img src="./assets/lsg.jpg">
-                                <p>LSG</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/rr.jpg">
-                                <p>RR</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
-                                <p>PZ</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
-                                <p>RCB</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/csk.jpg">
-                                <p>CSK</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
-                                <p>MS</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/dc.jpg">
-                                <p>MI</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/lsg.jpg">
-                                <p>IND</p>
-                            </div>
-                            <div class="swiper-slide team-card"><img src="./assets/kkr.jpg">
-                                <p>KKR</p>
+                    <div class="fixture">
+                        <div class="showcase-head">
+                            <h3>Team Fixtures</h3>
+                        </div>
+                        <div class="swiper teamSwiper py-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide team-card"><img src="./assets/lsg.jpg">
+                                    <p>LSG</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/rr.jpg">
+                                    <p>RR</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
+                                    <p>PZ</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
+                                    <p>RCB</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/csk.jpg">
+                                    <p>CSK</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/rcb.jpg">
+                                    <p>MS</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/dc.jpg">
+                                    <p>MI</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/lsg.jpg">
+                                    <p>IND</p>
+                                </div>
+                                <div class="swiper-slide team-card"><img src="./assets/kkr.jpg">
+                                    <p>KKR</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="swiper-button-prev custom-prev"></div>
+                        <div class="swiper-button-next custom-next"></div>
                     </div>
                     <!-- Arrows -->
-                    <div class="swiper-button-prev custom-prev"></div>
-                    <div class="swiper-button-next custom-next"></div>
 
                 </div>
             </section>
+
             <section class="matches-showcase">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="row g-4 align-items-start">
+                            <div class="row g-2">
 
                                 <div class="col-12 col-lg-9">
-                                    <div class="showcase-card matches-card h-100">
-                                        <div class="showcase-head ">
-                                            <h3>Upcoming Matches</h3>
-                                            <span class="mini-label d-none">Latest fixtures and quick match view</span>
-                                        </div>
+                                    <section class="matches-tab-2">
+                                        <div class="match-widget-2 position-relative">
 
-                                        <div class="matches-list">
-                                            <div class="custom-matches-row col-md-12">
-                                                <div class="match-item featured-match-item  col-12  col-md-6">
-                                                    <div class="match-topline">09 April 2026 | 19:30, Group Stage</div>
-                                                    <div class="match-scoreline">
-                                                        <div class="team-box">
-                                                            <img src="./assets/gt.jpg" alt="GT team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Gujarat Titans</strong>
-                                                                <span>Filter Gujarat Titans Matches</span>
+                                            <!-- Tabs -->
+                                            <div class="mw2-tabs">
+                                                <button class="mw2-tab active" data-tab="ipl2">Recent
+                                                    Matches</button>
+                                                <button class="mw2-tab" data-tab="t202">Worldcup</button>
+                                                <button class="mw2-tab" data-tab="wc2">Asia Cup</button>
+                                            </div>
+
+                                            <!-- ================= IPL ================= -->
+                                            <div class="mw2-content active" id="ipl2">
+
+                                                <div class="swiper mw2-swiper">
+                                                    <div class="swiper-wrapper">
+
+                                                        <!-- CARD -->
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
-                                                        <span class="versus">VS</span>
-                                                        <div class="team-box">
-                                                            <img src="./assets/dc.jpg" alt="DC team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Delhi Capitals</strong>
-                                                                <span>Filter Delhi Capitals Matches</span>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
+
+
+
+
+
                                                     </div>
-                                                    <div class="match-venue">Narendra Modi Stadium, Ahmedabad, India
-                                                    </div>
-                                                </div>
-                                                <div class="match-item  col-12  col-md-6">
-                                                    <div class="match-topline">10 April 2026 | 19:30, League Match</div>
-                                                    <div class="match-scoreline">
-                                                        <div class="team-box">
-                                                            <img src="./assets/rr.jpg" alt="RR team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Rajasthan Royals</strong>
-                                                                <span>Filter Rajasthan Royals Matches</span>
-                                                            </div>
-                                                        </div>
-                                                        <span class="versus">VS</span>
-                                                        <div class="team-box">
-                                                            <img src="./assets/rcb.jpg" alt="RCB team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Royal Challengers</strong>
-                                                                <span>Filter Royal Challengers Matches</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="match-venue">Sawai Mansingh Stadium, Jaipur, India</div>
+
+                                                    <!-- NAV -->
+                                                    <div class="mw2-prev">&#10094;</div>
+                                                    <div class="mw2-next">&#10095;</div>
                                                 </div>
 
                                             </div>
 
-                                            <div class="custom-matches-row col-md-12">
+                                            <!-- ================= T20 ================= -->
+                                            <div class="mw2-content" id="t202">
 
-                                                <div class="match-item col-md-6">
-                                                    <div class="match-topline">11 April 2026 | 15:30, Afternoon Match
-                                                    </div>
-                                                    <div class="match-scoreline">
-                                                        <div class="team-box">
-                                                            <img src="./assets/kkr.jpg" alt="KKR team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Kolkata Knight Riders</strong>
-                                                                <span>Filter Kolkata Knight Riders Matches</span>
+                                                <div class="swiper mw2-swiper">
+                                                    <div class="swiper-wrapper">
+
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
-                                                        <span class="versus">VS</span>
-                                                        <div class="team-box">
-                                                            <img src="./assets/pbks.jpg" alt="PBKS team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Punjab Kings</strong>
-                                                                <span>Filter Punjab Kings Matches</span>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
+
                                                     </div>
-                                                    <div class="match-venue">Eden Gardens, Kolkata, India</div>
+
+                                                    <div class="mw2-prev">&#10094;</div>
+                                                    <div class="mw2-next">&#10095;</div>
                                                 </div>
-                                                <div class="match-item col-md-6">
-                                                    <div class="match-topline">11 April 2026 | 15:30, Afternoon Match
-                                                    </div>
-                                                    <div class="match-scoreline">
-                                                        <div class="team-box">
-                                                            <img src="./assets/kkr.jpg" alt="KKR team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Kolkata Knight Riders</strong>
-                                                                <span>Filter Kolkata Knight Riders Matches</span>
+
+                                            </div>
+
+                                            <!-- ================= WC ================= -->
+                                            <div class="mw2-content" id="wc2">
+
+                                                <div class="swiper mw2-swiper">
+                                                    <div class="swiper-wrapper">
+
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">10 April 2026 | 19:30, League
+                                                                Match</div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/rr.jpg" alt="RR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Rajasthan Royals</strong>
+                                                                        <span>Filter Rajasthan Royals Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Royal Challengers</strong>
+                                                                        <span>Filter Royal Challengers
+                                                                            Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/rcb.jpg" alt="RCB team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Sawai Mansingh Stadium, Jaipur,
+                                                                India</div>
+                                                        </div>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
-                                                        <span class="versus">VS</span>
-                                                        <div class="team-box">
-                                                            <img src="./assets/pbks.jpg" alt="PBKS team logo"
-                                                                class="team-logo">
-                                                            <div class="team-copy">
-                                                                <strong>Punjab Kings</strong>
-                                                                <span>Filter Punjab Kings Matches</span>
+                                                        <div class="match-item col-12 col-md-4 swiper-slide">
+                                                            <div class="match-topline">11 April 2026 | 15:30,
+                                                                Afternoon Match
+                                                            </div>
+                                                            <div class="match-scoreline">
+                                                                <div class="team-box">
+                                                                    <img src="./assets/kkr.jpg" alt="KKR team logo"
+                                                                        class="team-logo">
+                                                                    <div class="team-copy">
+                                                                        <strong>Kolkata Knight Riders</strong>
+                                                                        <span>Filter Kolkata Knight Riders
+                                                                            Matches</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="versus">VS</span>
+                                                                <div class="team-box2">
+                                                                    <div class="team-copy">
+                                                                        <strong>Punjab Kings</strong>
+                                                                        <span>Filter Punjab Kings Matches</span>
+                                                                    </div>
+                                                                    <img src="./assets/pbks.jpg" alt="PBKS team logo"
+                                                                        class="team-logo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="match-venue">Eden Gardens, Kolkata, India
                                                             </div>
                                                         </div>
+
                                                     </div>
-                                                    <div class="match-venue">Eden Gardens, Kolkata, India</div>
+
+                                                    <div class="mw2-prev">&#10094;</div>
+                                                    <div class="mw2-next">&#10095;</div>
                                                 </div>
+
                                             </div>
 
                                         </div>
-                                    </div>
+                                    </section>
+                                    <section class="recent-stories mt-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <article class="showcase-card recent-series-card h-100">
+                                                    <div class="showcase-head">
+                                                        <h3>Explore more Series</h3>
+                                                    </div>
+                                                    <div class="series-slider-wrap">
+                                                        <div class="series-slider swiper">
+                                                            <div class="swiper-wrapper">
+
+                                                                <div class="swiper-slide"><a href="#">IPL 2026
+                                                                        schedule</a></div>
+                                                                <div class="swiper-slide"><a href="#">IPL 2026</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">India men's
+                                                                        fixtures</a></div>
+                                                                <div class="swiper-slide"><a href="#">India women's
+                                                                        fixtures</a></div>
+                                                                <div class="swiper-slide"><a href="#">Ask
+                                                                        Cricinfo</a></div>
+                                                                <div class="swiper-slide"><a href="#">ICC team
+                                                                        rankings</a></div>
+                                                                <div class="swiper-slide"><a href="#">ICC player
+                                                                        rankings</a></div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+                                                                <div class="swiper-slide"><a href="#">2000-2025</a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </section>
+
                                 </div>
 
                                 <div class="col-12 col-lg-3">
@@ -932,6 +1251,166 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="players-section pt-4">
+                <div class="container position-relative">
+                    <div class="players-fixture">
+
+                        <div class="showcase-head">
+                            <h3>Players </h3>
+                        </div>
+
+                        <div class="swiper playersSwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/viratkohli.jfif" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Virat Kohli</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide players-card">
+                                    <div class="player-img-wrap">
+                                        <img src="./assets/travishead.jpg" alt="Player">
+                                    </div>
+
+                                    <div class="player-info">
+                                        <p>Travis Head</p>
+                                        <span>Batter</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Unique Arrows -->
+                        <!-- <div class="players-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                        <div class="players-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div> -->
+
                     </div>
                 </div>
             </section>
@@ -1121,658 +1600,7 @@
                     </div>
                 </div>
             </section>
-            <section class="matches-tab-2 mt-5">
-                <div class="container">
-                    <div class="match-widget-2 position-relative">
 
-                        <!-- Tabs -->
-                        <div class="mw2-tabs">
-                            <button class="mw2-tab active" data-tab="ipl2">Recent Matches</button>
-                            <button class="mw2-tab" data-tab="t202">Worldcup</button>
-                            <button class="mw2-tab" data-tab="wc2">Asia Cup</button>
-                        </div>
-
-                        <!-- ================= IPL ================= -->
-                        <div class="mw2-content active" id="ipl2">
-
-                            <div class="swiper mw2-swiper">
-                                <div class="swiper-wrapper">
-
-                                    <!-- CARD -->
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-
-                                <!-- NAV -->
-                                <div class="mw2-prev">&#10094;</div>
-                                <div class="mw2-next">&#10095;</div>
-                            </div>
-
-                        </div>
-
-                        <!-- ================= T20 ================= -->
-                        <div class="mw2-content" id="t202">
-
-                            <div class="swiper mw2-swiper">
-                                <div class="swiper-wrapper">
-
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mw2-prev">&#10094;</div>
-                                <div class="mw2-next">&#10095;</div>
-                            </div>
-
-                        </div>
-
-                        <!-- ================= WC ================= -->
-                        <div class="mw2-content" id="wc2">
-
-                            <div class="swiper mw2-swiper">
-                                <div class="swiper-wrapper">
-
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-                                    <div class="mw2-card swiper-slide">
-                                        <div class="mw-head">T20 • IPL 2026</div>
-
-                                        <div class="mw-teams">
-                                            <div class="mw-team">
-                                                <img src="./assets/lsg.jpg">
-                                                <span>SRH</span>
-                                            </div>
-
-                                            <div class="mw-vs">VS</div>
-
-                                            <div class="mw-team">
-                                                <img src="./assets/rr.jpg">
-                                                <span>RR</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="filter-matches">
-                                            <a>Filter SRH matches </a>
-                                            <a>Filter RR matches </a>
-                                        </div>
-
-                                        <div class="mw-time">
-                                            <span>12/4/2026</span>
-                                            <span>07:30 PM</span>
-                                        </div>
-
-                                        <div class="mw-footer">
-                                            <span class="stadium-name">Wankhede Stadium, Mumbai</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mw2-prev">&#10094;</div>
-                                <div class="mw2-next">&#10095;</div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
             <section class="news-slider2">
                 <div class="container">
 
@@ -1950,7 +1778,7 @@
                 </div>
             </section>
 
-            
+
         </main>
     </div>
     <footer class="espn-footer">
@@ -2098,19 +1926,56 @@
                 1024: { slidesPerView: 8 }
             }
         });
+        var playersSwiper = new Swiper(".playersSwiper", {
+            slidesPerView: 6,   // default (desktop)
+            spaceBetween: 15,
+            loop: true,         // needed for smooth auto scroll
+
+            speed: 6000,        // controls smoothness (higher = smoother)
+
+            autoplay: {
+                delay: 0,         // continuous scroll (no pause)
+                disableOnInteraction: false,
+            },
+
+            navigation: {
+                nextEl: ".players-next",
+                prevEl: ".players-prev",
+            },
+
+            breakpoints: {
+                0: { slidesPerView: 2 },
+                576: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 6 } // max 6 only
+            }
+        });
         /* SWIPER INIT */
         document.querySelectorAll(".mw2-swiper").forEach((el) => {
             new Swiper(el, {
-                slidesPerView: "auto",
+                slidesPerView: 1,   // 👈 default = mobile
+
                 spaceBetween: 15,
+                loop: false,
 
                 navigation: {
                     nextEl: el.querySelector(".mw2-next"),
                     prevEl: el.querySelector(".mw2-prev"),
                 },
+
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,   // still 1 for small devices
+                    },
+                    768: {
+                        slidesPerView: 2,   // 👈 tablet & up
+                    },
+                    1024: {
+                        slidesPerView: 2,   // 👈 desktop also 2
+                    }
+                }
             });
         });
-
         /* TABS */
         document.querySelectorAll(".mw2-tab").forEach(tab => {
             tab.addEventListener("click", () => {

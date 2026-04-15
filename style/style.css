@@ -1412,9 +1412,22 @@ main .ghost-btn {
 .mw2-tabs {
   display: flex;
   gap: 20px;
+  overflow-x: scroll;
   margin-bottom: 0px;
     padding-bottom: 5px;
     border-bottom: 1px solid #e9e9e9;
+    scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.mw2-tabs::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+@media screen and (max-width:550px) {
+.mw2-tabs button{
+  font-size: 12px;
+}
+  
 }
 .mw-tabs {
   display: flex;
@@ -1920,6 +1933,107 @@ cursor: pointer;
 
   .custom-prev,
   .custom-next {
+    display: none;
+  }
+}
+.fixture,.players-fixture{
+      background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 18px;
+}
+
+.players-section {
+  background: transparent;
+}
+.players-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #0000004f;
+  text-align: center;
+  transition: 0.3s;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+/* Image Section */
+.player-img-wrap {
+  width: 100%;
+  height: 150px; /* FIXED HEIGHT */
+  overflow: hidden;
+}
+
+.player-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills properly */
+  display: block;
+}
+
+/* Name Section */
+.player-info {
+  /* border-top: 3px solid var(--accent-deep); */
+  padding: 10px 5px;
+  /* background: #fafafa; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-info span{
+  color: #11151b8e;
+  font-size: 12px;
+}
+.player-info p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+.players-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Arrows */
+.players-prev,
+.players-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.players-prev { left: 0; }
+.players-next { right: 0; }
+
+.players-prev::after,
+.players-next::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+  .players-prev,
+  .players-next {
     display: none;
   }
 }
