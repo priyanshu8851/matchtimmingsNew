@@ -1,10 +1,10 @@
 ﻿:root {
-  --accent: #FFCC3D;
-  --accent-deep: #FFCC3D;
+  --accent: #1180ff;
+  --accent-deep: #1164ff;
   --ink: #10131a;
   --ink-soft: #445064;
   --themeprimarybg:#000;
-  --themeprimarycolor:#ffdc11;
+  --themeprimarycolor:#1180ff;
   --paper: #f7fbff;
   --paper-strong: #ffffff;
   --paper-warm: #eaf3ff;
@@ -162,7 +162,7 @@ main {
   color: rgba(255, 255, 255, 0.95);
   padding: 5px 15px;
   text-decoration: none !important;
-    background: var(--accent);
+    background:#ffdc11;
     border-radius: 100vmax;
     font-size: .875rem;
     font-weight: 600;
@@ -256,10 +256,10 @@ main .ghost-btn {
 .mega-column h4 {
   margin-bottom: 16px;
   padding-bottom: 10px;
-  color: #ffdc11;
+  color: #1180ff;
   font-size: 12px;
   font-weight: 550;
-  border-bottom: 2px solid #ffdc11;
+  border-bottom: 2px solid #1180ff;
 }
 
 .mega-column ul {
@@ -1410,12 +1410,12 @@ main .ghost-btn {
 
 /* Tabs */
 .mw2-tabs {
-  display: flex;
+   display: flex;
   gap: 20px;
-  overflow-x: scroll;
   margin-bottom: 0px;
     padding-bottom: 5px;
     border-bottom: 1px solid #e9e9e9;
+    overflow-x: scroll;
     scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;
 }
@@ -2036,4 +2036,111 @@ cursor: pointer;
   .players-next {
     display: none;
   }
+}
+.heromain .showcase-card .showcase-head{
+margin-bottom: 0;
+/* padding-bottom: 0; */
+}
+
+
+/* Pill buttons */
+.recent-story a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.recent-story a:hover {
+    background: #1164ff;
+    border-color: #1164ff;
+    color: #fff;
+}
+
+/* Active style (optional) */
+.recent-story a.active {
+    background: #1164ff;
+    border-color: #1164ff;
+    color: #000;
+    font-weight: 500;
+}
+.stories{
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.showcase-head h1{
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+/* Teams container */
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 530px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Individual team item */
+.team-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 10px 12px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+}
+
+/* Hover effect */
+.team-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Team image */
+.team-item img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #f8f8f8;
+    padding: 5px;
+}
+
+/* Text */
+.team-info h6 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.team-info span {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Scrollbar styling */
+.teams::-webkit-scrollbar {
+    width: 4px;
+}
+
+.teams::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
 }
