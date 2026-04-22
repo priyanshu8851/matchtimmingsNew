@@ -479,7 +479,6 @@ main .ghost-btn {
   padding: 18px;
   border-radius: var(--radius-xl);
   background: #fff;
-    /* background: linear-gradient(160deg, rgba(21, 91, 213, 0.12), rgba(255, 255, 255, 0.86)); */
   border: 1px solid rgba(16, 19, 26, 0.08);
   box-shadow: var(--shadow);
   overflow: hidden;
