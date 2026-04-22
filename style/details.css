@@ -65,7 +65,7 @@
     bottom: -4px;
     width: 0%;
     height: 2px;
-    background: #22c55e;
+    background: #1164ff;
     transition: 0.3s ease;
 }
 
@@ -94,6 +94,7 @@
 
 .modern-breadcrumb::after {
     content: "";
+    display: none;
     position: absolute;
     bottom: -12px;
     left: 0;
@@ -256,7 +257,7 @@
 }
 
 .season-header h4 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -286,8 +287,8 @@
 
 /* Hover effect */
 .season-card:hover {
-    transform: translateY(-4px);
-    background: linear-gradient(135deg, #1164ff, #ffdc11);
+    transform: translateY(-1px);
+    background: linear-gradient(135deg, #1164ff, #11bcffc4);
     color: #000;
 }
 
@@ -311,8 +312,10 @@
 /* Title */
 .content-title {
     font-size: 20px;
+    text-decoration: underline;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top:20px ;
 }
 
 /* Text */
@@ -331,7 +334,7 @@
     display: flex;
     gap: 20px;
     margin-bottom: 15px;
-        padding-bottom: 5px;
+        /* padding-bottom: 5px; */
     border-bottom: 1px solid #e9e9e9;
     overflow-x: scroll;
     scrollbar-width: none;
