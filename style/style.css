@@ -2391,11 +2391,11 @@ main .ghost-btn {
 }
 
 /* Responsive */
-@media(max-width: 400px) {
+/* @media(max-width: 400px) {
   .login-card {
     width: 90%;
   }
-}
+} */
 
 .login-head {
   background-image:
@@ -2405,6 +2405,15 @@ main .ghost-btn {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob-screen{
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width:550px) {
   
