@@ -476,3 +476,9 @@
 .ps-tabs::-webkit-scrollbar {
     display: none;
 }
+@media screen and (max-width:550px) {
+    
+    .breadcrumb-content{
+    margin-top:55px;
+    }
+}
